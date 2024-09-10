@@ -1,14 +1,16 @@
-// Get references to the toggle button and container
-const toggleBtn = document.getElementById('toggleBtn') as HTMLElement | null;
-const container = document.getElementById('container') as HTMLElement | null;
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('toggleBtn');
+  const hiddenSkills = document.getElementById('hiddenSkills');
 
-if (toggleBtn && container) {
-  // Add an event listener to the toggle button
-  toggleBtn.addEventListener('click', function () {
-    // Toggle the 'active' class on the container element
-    container.classList.toggle('active');
-  });
-} else {
-  console.error("Elements not found");
-}
-  
+  console.log('Toggle Button:', toggleBtn);
+  console.log('Hidden Skills:', hiddenSkills);
+
+  if (toggleBtn && hiddenSkills) {
+    toggleBtn.addEventListener('click', () => {
+      console.log('Button Clicked');
+      hiddenSkills.classList.toggle('active');
+    });
+  } else {
+    console.error("Elements not found");
+  }
+});
