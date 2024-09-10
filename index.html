@@ -1,81 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css">
+    <title>Static-Resume-By-YUSRA_SALEEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- HEADER START -->
-    <header>
-        <div class="profile">
-            <img src="profile.png" alt="">
-            <h1 id="main-h1">Yusra Saleem</h1>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+    <div class="container">
+        <div class="side1">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="profile.png" alt="">
+                </div>
+                <h2>Yusra Saleem<br><span>Front-End Developer</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text">+92 310 2983718</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="text">yusrasaleem679@gmil.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="text">Karachi, Pakistan</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactInfo education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2022-2024</h5>
+                        <h4>Intermediate in Commerce</h4>
+                        <h4>Liaquat Govt. College</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2022</h5>
+                        <h4>Matriculation in Science</h4>
+                        <h4>S.C.Academy</h4>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#"><i class="fas fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fas fa-server"></i>Skills</a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i>Experience</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
-            </ul>
-        </nav>
-        <div class="footer">
-            <p> &copy; 2023 <br><a href="https://github.com/yusra-saleem"> Yusra Saleem</a></p>
+
+        <div class="side2">
+            <div class="about">
+                <h2 class="title2">About</h2>
+                <p class="text">
+                    Hi, I'm YUSRA SALEEM, a passionate and dedicated Full Stack Developer with a strong focus on
+                    front-end technologies. Over the years, I've honed my skills in HTML, CSS, JavaScript, and
+                    TypeScript, and have expanded my expertise to modern frameworks such as Next.js.
+
+                    I have a keen interest in building responsive and interactive user interfaces, always ensuring that
+                    my code is clean, efficient, and scalable.
+                </p>
+
+            </div>
+
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <p>During the past six months, I have honed my skills by working on a variety of personal projects.
+                        This hands-on experience allowed me to deepen my understanding of project management, coding
+                        best practices. My focus has been on improving my technical skills and applying creative
+                        solutions to real-world problems, consistently meeting or exceeding project goals.</p>
+
+                </div>
+            </div>
+            <!--== skilss section in toggle button ==-->
+
+            <div class="about">
+                <h2 class="title2">Skills
+                   <span> <i class="fa-solid fa-angles-down" id="toggleBtn"></i>
+                </h2></span>
+            </div>
+            <div class="hiddenSkills" id="hiddenSkills">
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>JAVASCRIPT</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>TYPESCRIPT</h4>
+                    <div class="percent">
+                        <div style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>NEXT.JS</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </header>
-    <div id="container" class="skills-section">
-        <div class="skills-section">
-            <h1>Skills</h1>
-            <p>Here you can find the skills I have acquired over the years.</p>
-            <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>TYPESCRIPT</li>
-                <li>NEXT.JS</li>
-            </ul>
-        </div>
-        <div class="experience-section">
-            <h1>Experience</h1>
-            <p>Here you can find my experience in various fields of work.</p>
-            <i>FRONT END DEVELOPER</i>
-        </div>
+
     </div>
-    <div class="toggle">
-        <i class="fas fa-server" id="toggleBtn"></i>
     </div>
 
-    <!-- home section -->
-    <section id="home"> <div class="home-row">
-        <h1>Hi , This is <br>Yusra Saleem<span class="name">.</span></h1>
-        <p>I'm a <span class="auto-input">Front-End Developer</span></p>
-        <!-- about section -->
-         <div class="about">
-         <div class="about-section">
-        <h2 >About ME</h2>
-        <p>Hi, I'm [Your Name], a passionate and dedicated Full Stack Developer with a strong focus on front-end technologies. Over the years, I've honed my skills in HTML, CSS, JavaScript, and TypeScript, and have expanded my expertise to modern frameworks such as Next.js.
-    
-          I have a keen interest in building responsive and interactive user interfaces, always ensuring that my code is clean, efficient, and scalable.</p>
-        </div>
-        </div>
-     </div>
-    </section>
-
-
-
-    
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" c
-    rossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+
 </html>
